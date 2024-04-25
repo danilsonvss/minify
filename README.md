@@ -35,7 +35,7 @@ export PYTHON=$(which python3)
 ## Gerando o executável
 
 ```bash
-npx nexe -i src/main.js -o dist/minify --build
+npx nexe -i src/main.js -o dist/minify --build --verbose
 ```
 
 ## Utilização
