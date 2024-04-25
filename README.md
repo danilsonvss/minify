@@ -43,11 +43,5 @@ npx nexe -i src/main.js -o dist/minify --build
 Para minificar os arquivos `.js` e `.css`, execute o seguinte comando no terminal:
 
 ```bash
-minify
-```
-
-Ou informando o encoding. O valor padrão é `utf8`
-
-```bash
-minify iso88591
+minify -h || minify --help # Dicas de como usar
 ```
