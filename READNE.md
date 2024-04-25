@@ -4,8 +4,18 @@ Este projeto é um script Node.js para minificar arquivos JavaScript (.js) e CSS
 
 ## Requisitos
 
+- Python3 
 - Node.js instalado
 - npm (geralmente vem junto com o Node.js)
+
+## Configuração do Python
+
+Após instalar o Python, você precisa garantir que a variável de ambiente PYTHON aponte para o executável do Python.
+
+```bash
+echo $PYTHON
+export PYTHON=$(which python3)
+```
 
 ## Instalação
 
@@ -33,4 +43,11 @@ npx nexe -i src/main.js -o dist/minify --build
 Para minificar os arquivos `.js` e `.css`, execute o seguinte comando no terminal:
 
 ```bash
-npm run minify
+minify
+```
+
+Ou informando o encoding. O valor padrão é `iso88591`
+
+```bash
+minify utf8
+```
