@@ -46,8 +46,8 @@ Para minificar os arquivos `.js` e `.css`, execute o seguinte comando no termina
 minify
 ```
 
-Ou informando o encoding. O valor padrão é `iso88591`
+Ou informando o encoding. O valor padrão é `utf8`
 
 ```bash
-minify utf8
+minify iso88591
 ```

@@ -43,7 +43,7 @@ glob(config.js.src, {}, (err, files) => {
     return;
   }
 
-  files.forEach(file => minifyJS(file, 'iso88591'));
+  files.forEach(file => minifyJS(file, 'utf8'));
   console.log('Arquivos JS minificados.');
 });
 
@@ -54,6 +54,6 @@ glob(config.css.src, {}, (err, files) => {
     return;
   }
 
-  files.forEach(file => minifyCSS(file, 'iso88591'));
+  files.forEach(file => minifyCSS(file, 'utf8'));
   console.log('Arquivos CSS minificados.');
 });
